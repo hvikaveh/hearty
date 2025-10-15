@@ -21,7 +21,7 @@ for (let i = 0; i < numPoints; i++) {
     const z = (Math.random() - 0.5) * 0.5;
     
     // Scale the heart down by multiplying with 0.15
-    vertices.push(x * 0.15, y * 0.15, z); 
+    vertices.push(x * 0.08, y * 0.88, z); 
 }
 
 // ====== Particles and Material Setup ======
@@ -53,4 +53,5 @@ function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 }
+
 animate();
